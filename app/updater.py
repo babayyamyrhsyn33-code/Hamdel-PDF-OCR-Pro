@@ -5,13 +5,9 @@ import json
 import urllib.request
 
 REPO = "babayyamyrhsyn33-code/Hamdel-PDF-OCR-Pro"
-CURRENT_VERSION = "1.3.0"
+CURRENT_VERSION = "1.4.0"
 
 def check_for_update(timeout=8):
-    """
-    بررسی وجود نسخه جدیدتر در GitHub Releases.
-    برمی‌گرداند: (has_update: bool, latest_version: str, download_url: str, notes: str)
-    """
     try:
         from packaging import version
         url = f"https://api.github.com/repos/{REPO}/releases/latest"
